@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestV1">
+	<listeners>
+		<listener class-name="com.trax.utilities.Reporting" />
+	</listeners>
+	<test name="test Test">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<!-- Basic ones -->
+			<class name="com.trax.testCases.TC_selectOutfitTest" />
+			<class name="com.trax.testCases.TC_FailedScreenshot" />
+			<!-- Extended ones -->
+			<class
+				name="com.trax.testCases.TC_addToCartAndProceedtoCheckout" />
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-TestV1" class="navigator-link">
+              <span class="suite-name border-failed">TestV1</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-TestV1" class="navigator-link ">
+                    <span>C:\Users\atul.sharma\Desktop\BBL-Challenge\Test-BBL-DataDrivenTesting\Testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-TestV1" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-TestV1" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-TestV1" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-TestV1" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-TestV1" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-TestV1" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TestV1" class="hide-methods failed suite-TestV1"> (hide)</a> <!-- hide-methods failed suite-TestV1 -->
+                      <a href="#" panel-name="suite-TestV1" class="show-methods failed suite-TestV1"> (show)</a> <!-- show-methods failed suite-TestV1 -->
+                    </span>
+                    <div class="method-list-content failed suite-TestV1">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestV1" title="com.trax.testCases.TC_LoginPassFail" class="method navigator-link" hash-for-method="LoginPassFail(sharma.atulkumar@gmail.com,Test@123)">LoginPassFail(sharma.atulkumar@gmail.com,Test@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestV1" title="com.trax.testCases.TC_LoginPassFail" class="method navigator-link" hash-for-method="LoginPassFail(sharma.atulkumar29@gmail.com,Test@12)">LoginPassFail(sharma.atulkumar29@gmail.com,Test@12)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TestV1 -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-TestV1" class="hide-methods passed suite-TestV1"> (hide)</a> <!-- hide-methods passed suite-TestV1 -->
+                      <a href="#" panel-name="suite-TestV1" class="show-methods passed suite-TestV1"> (show)</a> <!-- show-methods passed suite-TestV1 -->
+                    </span>
+                    <div class="method-list-content passed suite-TestV1">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestV1" title="com.trax.testCases.TC_LoginPassFail" class="method navigator-link" hash-for-method="LoginPassFail(sharma.atulkumar29@gmail.com,Test@123)">LoginPassFail(sharma.atulkumar29@gmail.com,Test@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-TestV1 -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-TestV1" class="panel TestV1">
+          <div class="suite-TestV1-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.trax.testCases.TC_LoginPassFail</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginPassFail(sharma.atulkumar@gmail.com,Test@123)">
+                  </a> <!-- LoginPassFail(sharma.atulkumar@gmail.com,Test@123) -->
+                  <span class="method-name">LoginPassFail</span>
+                  <span class="parameters">(sharma.atulkumar@gmail.com,Test@123)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [http://automationpractice.com/index.php?controller=my-account] but found [http://automationpractice.com/index.php?controller=authentication]
+	at com.trax.pageObjects.HomePage.loginUnamePwd(HomePage.java:182)
+	at com.trax.testCases.TC_LoginPassFail.LoginPassFail(TC_LoginPassFail.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginPassFail(sharma.atulkumar29@gmail.com,Test@12)">
+                  </a> <!-- LoginPassFail(sharma.atulkumar29@gmail.com,Test@12) -->
+                  <span class="method-name">LoginPassFail</span>
+                  <span class="parameters">(sharma.atulkumar29@gmail.com,Test@12)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [http://automationpractice.com/index.php?controller=my-account] but found [http://automationpractice.com/index.php?controller=authentication]
+	at com.trax.pageObjects.HomePage.loginUnamePwd(HomePage.java:182)
+	at com.trax.testCases.TC_LoginPassFail.LoginPassFail(TC_LoginPassFail.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestV1-class-failed -->
+          <div class="suite-TestV1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.trax.testCases.TC_LoginPassFail</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginPassFail(sharma.atulkumar29@gmail.com,Test@123)">
+                  </a> <!-- LoginPassFail(sharma.atulkumar29@gmail.com,Test@123) -->
+                  <span class="method-name">LoginPassFail</span>
+                  <span class="parameters">(sharma.atulkumar29@gmail.com,Test@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestV1-class-passed -->
+        </div> <!-- panel TestV1 -->
+        <div panel-name="test-xml-TestV1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\atul.sharma\Desktop\BBL-Challenge\Test-BBL-DataDrivenTesting\Testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;TestV1&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;test Test&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.trax.testCases.TC_LoginPassFail&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- test Test --&gt;
+&lt;/suite&gt; &lt;!-- TestV1 --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-TestV1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for TestV1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">test Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-TestV1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for TestV1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-TestV1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for TestV1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_TestV1');
+function tableData_TestV1() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(3);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'LoginPassFail')
+data.setCell(0, 2, 'com.trax.testCases.TC_LoginPassFail')
+data.setCell(0, 3, 9524);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'LoginPassFail')
+data.setCell(1, 2, 'com.trax.testCases.TC_LoginPassFail')
+data.setCell(1, 3, 8760);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'LoginPassFail')
+data.setCell(2, 2, 'com.trax.testCases.TC_LoginPassFail')
+data.setCell(2, 3, 8504);
+window.suiteTableData['TestV1']= { tableData: data, tableDiv: 'times-div-TestV1'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 26 seconds</span>
+              <div id="times-div-TestV1">
+              </div> <!-- times-div-TestV1 -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-TestV1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for TestV1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-TestV1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-TestV1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.trax.testCases.TC_LoginPassFail</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LoginPassFail(sharma.atulkumar@gmail.com,Test@123)</span>
+                <span class="method-start">4786 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LoginPassFail(sharma.atulkumar29@gmail.com,Test@12)</span>
+                <span class="method-start">13551 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LoginPassFail(sharma.atulkumar29@gmail.com,Test@123)</span>
+                <span class="method-start">23080 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">31587 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="0" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-08-08T00:28:55 EDT" name="TestV1" finished-at="2021-08-08T00:29:48 EDT" duration-ms="53032">
+    <groups>
+    </groups>
+    <test started-at="2021-08-08T00:28:55 EDT" name="test Test" finished-at="2021-08-08T00:29:48 EDT" duration-ms="53032">
+      <class name="com.trax.testCases.TC_selectOutfitTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.trax.testCases.TC_selectOutfitTest@2df9b86]" started-at="2021-08-08T00:28:55 EDT" name="setup" finished-at="2021-08-08T00:28:59 EDT" duration-ms="4345" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="selectOutfitTest()[pri:0, instance:com.trax.testCases.TC_selectOutfitTest@2df9b86]" started-at="2021-08-08T00:28:59 EDT" name="selectOutfitTest" finished-at="2021-08-08T00:29:11 EDT" duration-ms="11954" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#our_price_display"}
+  (Session info: chrome=92.0.4515.131)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'NOR-ATULS-LT', ip: '172.16.65.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\atul.sharma\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:51094}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d58578a463db931e9613d71ff657a8ac
+*** Element info: {Using=id, value=our_price_display}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#our_price_display"}
+  (Session info: chrome=92.0.4515.131)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'NOR-ATULS-LT', ip: '172.16.65.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\atul.sharma\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:51094}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d58578a463db931e9613d71ff657a8ac
+*** Element info: {Using=id, value=our_price_display}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy14.getText(Unknown Source)
+at com.trax.pageObjects.BaseClass.valueofSpan(BaseClass.java:180)
+at com.trax.pageObjects.HomePage.selectedOutfitAndAddToCart(HomePage.java:132)
+at com.trax.testCases.TC_selectOutfitTest.selectOutfitTest(TC_selectOutfitTest.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectOutfitTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trax.testCases.TC_selectOutfitTest@2df9b86]" started-at="2021-08-08T00:29:12 EDT" name="tearDown" finished-at="2021-08-08T00:29:12 EDT" duration-ms="749" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.trax.testCases.TC_selectOutfitTest -->
+      <class name="com.trax.testCases.TC_addToCartAndProceedtoCheckout">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.trax.testCases.TC_addToCartAndProceedtoCheckout@15aab8c6]" started-at="2021-08-08T00:29:29 EDT" name="setup" finished-at="2021-08-08T00:29:33 EDT" duration-ms="4326" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="selectOutfitTest()[pri:0, instance:com.trax.testCases.TC_addToCartAndProceedtoCheckout@15aab8c6]" started-at="2021-08-08T00:29:33 EDT" name="selectOutfitTest" finished-at="2021-08-08T00:29:45 EDT" duration-ms="12375" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#our_price_display"}
+  (Session info: chrome=92.0.4515.131)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'NOR-ATULS-LT', ip: '172.16.65.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\atul.sharma\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:51612}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2367bd53ffa15c87ff22efdbd9f7e2d5
+*** Element info: {Using=id, value=our_price_display}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#our_price_display"}
+  (Session info: chrome=92.0.4515.131)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'NOR-ATULS-LT', ip: '172.16.65.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\atul.sharma\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:51612}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2367bd53ffa15c87ff22efdbd9f7e2d5
+*** Element info: {Using=id, value=our_price_display}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy14.getText(Unknown Source)
+at com.trax.pageObjects.BaseClass.valueofSpan(BaseClass.java:180)
+at com.trax.pageObjects.HomePage.selectedOutfitAndAddToCart(HomePage.java:132)
+at com.trax.testCases.TC_selectOutfitTest.selectOutfitTest(TC_selectOutfitTest.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectOutfitTest -->
+        <test-method signature="addToCartAndProceedtoCheckout()[pri:0, instance:com.trax.testCases.TC_addToCartAndProceedtoCheckout@15aab8c6]" started-at="2021-08-08T00:29:46 EDT" name="addToCartAndProceedtoCheckout" finished-at="2021-08-08T00:29:47 EDT" depends-on-methods="com.trax.testCases.TC_selectOutfitTest.selectOutfitTest" duration-ms="1326" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [0.0] but found [27.0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [0.0] but found [27.0]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertEquals(Assert.java:706)
+at org.testng.Assert.assertEquals(Assert.java:717)
+at com.trax.pageObjects.CartAndSummaryPage.proceedToCheckout(CartAndSummaryPage.java:63)
+at com.trax.testCases.TC_addToCartAndProceedtoCheckout.addToCartAndProceedtoCheckout(TC_addToCartAndProceedtoCheckout.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartAndProceedtoCheckout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trax.testCases.TC_addToCartAndProceedtoCheckout@15aab8c6]" started-at="2021-08-08T00:29:47 EDT" name="tearDown" finished-at="2021-08-08T00:29:48 EDT" duration-ms="789" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.trax.testCases.TC_addToCartAndProceedtoCheckout -->
+      <class name="com.trax.testCases.TC_FailedScreenshot">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.trax.testCases.TC_FailedScreenshot@37654521]" started-at="2021-08-08T00:29:12 EDT" name="setup" finished-at="2021-08-08T00:29:17 EDT" duration-ms="4292" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="FailedScreenshot()[pri:0, instance:com.trax.testCases.TC_FailedScreenshot@37654521]" started-at="2021-08-08T00:29:17 EDT" name="FailedScreenshot" finished-at="2021-08-08T00:29:28 EDT" duration-ms="10997" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='product_img_link']/img[@title='Blouse']"}
+  (Session info: chrome=92.0.4515.131)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'NOR-ATULS-LT', ip: '172.16.65.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\atul.sharma\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:62684}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8be51c1e5e768b4d7f432aa443a6cb1f
+*** Element info: {Using=xpath, value=//a[@class='product_img_link']/img[@title='Blouse']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='product_img_link']/img[@title='Blouse']"}
+  (Session info: chrome=92.0.4515.131)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'NOR-ATULS-LT', ip: '172.16.65.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\atul.sharma\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:62684}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8be51c1e5e768b4d7f432aa443a6cb1f
+*** Element info: {Using=xpath, value=//a[@class='product_img_link']/img[@title='Blouse']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy14.click(Unknown Source)
+at com.trax.pageObjects.HomePage.clickContactAndFail(HomePage.java:160)
+at com.trax.testCases.TC_FailedScreenshot.FailedScreenshot(TC_FailedScreenshot.java:20)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailedScreenshot -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trax.testCases.TC_FailedScreenshot@37654521]" started-at="2021-08-08T00:29:28 EDT" name="tearDown" finished-at="2021-08-08T00:29:29 EDT" duration-ms="736" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.trax.testCases.TC_FailedScreenshot -->
+    </test> <!-- test Test -->
+  </suite> <!-- TestV1 -->
+</testng-results>

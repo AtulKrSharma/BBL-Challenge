@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-TraxV1" class="navigator-link">
+              <span class="suite-name border-skipped">TraxV1</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-TraxV1" class="navigator-link ">
+                    <span>Testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-TraxV1" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-TraxV1" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-TraxV1" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-TraxV1" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-TraxV1" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-TraxV1" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">14 methods,  14 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-TraxV1" class="hide-methods skipped suite-TraxV1"> (hide)</a> <!-- hide-methods skipped suite-TraxV1 -->
+                      <a href="#" panel-name="suite-TraxV1" class="show-methods skipped suite-TraxV1"> (show)</a> <!-- show-methods skipped suite-TraxV1 -->
+                    </span>
+                    <div class="method-list-content skipped suite-TraxV1">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TraxV1" title="com.trax.testCases.TC_convertJobAndPurchaseOrdersTest" class="method navigator-link" hash-for-method="addAndPopulateJobTest">addAndPopulateJobTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TraxV1" title="com.trax.testCases.TC_convertJobAndPurchaseOrdersTest" class="method navigator-link" hash-for-method="addJobTest">addJobTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TraxV1" title="com.trax.testCases.TC_addProdToMfrTest" class="method navigator-link" hash-for-method="addMfrTest">addMfrTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TraxV1" title="com.trax.testCases.TC_addProdToMfrTest" class="method navigator-link" hash-for-method="addProdToMfrTest">addProdToMfrTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TraxV1" title="com.trax.testCases.TC_addSupplierTest" class="method navigator-link" hash-for-method="addSupplierTest">addSupplierTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TraxV1" title="com.trax.testCases.TC_convertJobAndPurchaseOrdersTest" class="method navigator-link" hash-for-method="convertJobAndPurchaseOrdersTest">convertJobAndPurchaseOrdersTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TraxV1" title="com.trax.testCases.TC_convertJobAndPurchaseOrdersTest" class="method navigator-link" hash-for-method="convertJobAndSubmittalTest">convertJobAndSubmittalTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TraxV1" title="com.trax.testCases.TC_convertJobAndPurchaseOrdersTest" class="method navigator-link" hash-for-method="convertJobTest">convertJobTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TraxV1" title="com.trax.testCases.TC_createPurchaseOrderTest" class="method navigator-link" hash-for-method="createPurchaseOrderTest">createPurchaseOrderTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TraxV1" title="com.trax.testCases.TC_createSalesOrderwithFullInventory" class="method navigator-link" hash-for-method="createSalesOrderwithFullInventory">createSalesOrderwithFullInventory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TraxV1" title="com.trax.testCases.TC_createSalesOrderwithPartialInventory" class="method navigator-link" hash-for-method="createSalesOrderwithPartialInventory">createSalesOrderwithPartialInventory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TraxV1" title="com.trax.testCases.TC_createSalesOrderwithZeroInventory" class="method navigator-link" hash-for-method="createSalesOrderwithZeroInventory">createSalesOrderwithZeroInventory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TraxV1" title="com.trax.testCases.TC_salesQuoteByPartsIDTest" class="method navigator-link" hash-for-method="salesQuoteByPartsIDTest">salesQuoteByPartsIDTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TraxV1" title="com.trax.testCases.TC_salesQuoteBySearchTagsTest" class="method navigator-link" hash-for-method="salesQuoteBySearchTagsTest">salesQuoteBySearchTagsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-TraxV1 -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-TraxV1" class="panel TraxV1">
+          <div class="suite-TraxV1-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.trax.testCases.TC_salesQuoteByPartsIDTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="salesQuoteByPartsIDTest">
+                  </a> <!-- salesQuoteByPartsIDTest -->
+                  <span class="method-name">salesQuoteByPartsIDTest</span>
+                  <div class="stack-trace">java.lang.RuntimeException: Unable to find a free port
+	at org.openqa.selenium.net.PortProber.findFreePort(PortProber.java:67)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:342)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at com.trax.pageObjects.BaseClass.setup(BaseClass.java:145)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TraxV1-class-skipped -->
+          <div class="suite-TraxV1-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.trax.testCases.TC_createSalesOrderwithPartialInventory</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createSalesOrderwithPartialInventory">
+                  </a> <!-- createSalesOrderwithPartialInventory -->
+                  <span class="method-name">createSalesOrderwithPartialInventory</span>
+                  <div class="stack-trace">java.lang.RuntimeException: Unable to find a free port
+	at org.openqa.selenium.net.PortProber.findFreePort(PortProber.java:67)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:342)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at com.trax.pageObjects.BaseClass.setup(BaseClass.java:145)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TraxV1-class-skipped -->
+          <div class="suite-TraxV1-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.trax.testCases.TC_createSalesOrderwithZeroInventory</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createSalesOrderwithZeroInventory">
+                  </a> <!-- createSalesOrderwithZeroInventory -->
+                  <span class="method-name">createSalesOrderwithZeroInventory</span>
+                  <div class="stack-trace">java.lang.RuntimeException: Unable to find a free port
+	at org.openqa.selenium.net.PortProber.findFreePort(PortProber.java:67)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:342)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at com.trax.pageObjects.BaseClass.setup(BaseClass.java:145)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TraxV1-class-skipped -->
+          <div class="suite-TraxV1-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.trax.testCases.TC_addSupplierTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addSupplierTest">
+                  </a> <!-- addSupplierTest -->
+                  <span class="method-name">addSupplierTest</span>
+                  <div class="stack-trace">java.lang.RuntimeException: Unable to find a free port
+	at org.openqa.selenium.net.PortProber.findFreePort(PortProber.java:67)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:342)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at com.trax.pageObjects.BaseClass.setup(BaseClass.java:145)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TraxV1-class-skipped -->
+          <div class="suite-TraxV1-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.trax.testCases.TC_addProdToMfrTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addMfrTest">
+                  </a> <!-- addMfrTest -->
+                  <span class="method-name">addMfrTest</span>
+                  <div class="stack-trace">java.lang.RuntimeException: Unable to find a free port
+	at org.openqa.selenium.net.PortProber.findFreePort(PortProber.java:67)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:342)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at com.trax.pageObjects.BaseClass.setup(BaseClass.java:145)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addProdToMfrTest">
+                  </a> <!-- addProdToMfrTest -->
+                  <span class="method-name">addProdToMfrTest</span>
+                  <div class="stack-trace">java.lang.RuntimeException: Unable to find a free port
+	at org.openqa.selenium.net.PortProber.findFreePort(PortProber.java:67)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:342)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at com.trax.pageObjects.BaseClass.setup(BaseClass.java:145)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TraxV1-class-skipped -->
+          <div class="suite-TraxV1-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.trax.testCases.TC_salesQuoteBySearchTagsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="salesQuoteBySearchTagsTest">
+                  </a> <!-- salesQuoteBySearchTagsTest -->
+                  <span class="method-name">salesQuoteBySearchTagsTest</span>
+                  <div class="stack-trace">java.lang.RuntimeException: Unable to find a free port
+	at org.openqa.selenium.net.PortProber.findFreePort(PortProber.java:67)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:342)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at com.trax.pageObjects.BaseClass.setup(BaseClass.java:145)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TraxV1-class-skipped -->
+          <div class="suite-TraxV1-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.trax.testCases.TC_convertJobAndPurchaseOrdersTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addAndPopulateJobTest">
+                  </a> <!-- addAndPopulateJobTest -->
+                  <span class="method-name">addAndPopulateJobTest</span>
+                  <div class="stack-trace">java.lang.RuntimeException: Unable to find a free port
+	at org.openqa.selenium.net.PortProber.findFreePort(PortProber.java:67)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:342)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at com.trax.pageObjects.BaseClass.setup(BaseClass.java:145)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addJobTest">
+                  </a> <!-- addJobTest -->
+                  <span class="method-name">addJobTest</span>
+                  <div class="stack-trace">java.lang.RuntimeException: Unable to find a free port
+	at org.openqa.selenium.net.PortProber.findFreePort(PortProber.java:67)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:342)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at com.trax.pageObjects.BaseClass.setup(BaseClass.java:145)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="convertJobAndPurchaseOrdersTest">
+                  </a> <!-- convertJobAndPurchaseOrdersTest -->
+                  <span class="method-name">convertJobAndPurchaseOrdersTest</span>
+                  <div class="stack-trace">java.lang.RuntimeException: Unable to find a free port
+	at org.openqa.selenium.net.PortProber.findFreePort(PortProber.java:67)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:342)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at com.trax.pageObjects.BaseClass.setup(BaseClass.java:145)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="convertJobAndSubmittalTest">
+                  </a> <!-- convertJobAndSubmittalTest -->
+                  <span class="method-name">convertJobAndSubmittalTest</span>
+                  <div class="stack-trace">java.lang.RuntimeException: Unable to find a free port
+	at org.openqa.selenium.net.PortProber.findFreePort(PortProber.java:67)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:342)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at com.trax.pageObjects.BaseClass.setup(BaseClass.java:145)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="convertJobTest">
+                  </a> <!-- convertJobTest -->
+                  <span class="method-name">convertJobTest</span>
+                  <div class="stack-trace">java.lang.RuntimeException: Unable to find a free port
+	at org.openqa.selenium.net.PortProber.findFreePort(PortProber.java:67)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:342)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at com.trax.pageObjects.BaseClass.setup(BaseClass.java:145)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TraxV1-class-skipped -->
+          <div class="suite-TraxV1-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.trax.testCases.TC_createSalesOrderwithFullInventory</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createSalesOrderwithFullInventory">
+                  </a> <!-- createSalesOrderwithFullInventory -->
+                  <span class="method-name">createSalesOrderwithFullInventory</span>
+                  <div class="stack-trace">java.lang.RuntimeException: Unable to find a free port
+	at org.openqa.selenium.net.PortProber.findFreePort(PortProber.java:67)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:342)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at com.trax.pageObjects.BaseClass.setup(BaseClass.java:145)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TraxV1-class-skipped -->
+          <div class="suite-TraxV1-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.trax.testCases.TC_createPurchaseOrderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createPurchaseOrderTest">
+                  </a> <!-- createPurchaseOrderTest -->
+                  <span class="method-name">createPurchaseOrderTest</span>
+                  <div class="stack-trace">java.lang.RuntimeException: Unable to find a free port
+	at org.openqa.selenium.net.PortProber.findFreePort(PortProber.java:67)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:342)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at com.trax.pageObjects.BaseClass.setup(BaseClass.java:145)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TraxV1-class-skipped -->
+        </div> <!-- panel TraxV1 -->
+        <div panel-name="test-xml-TraxV1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/var/lib/jenkins/workspace/Trax_Automation-Test/Testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;TraxV1&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.trax.utilities.Reporting&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;trax Test&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chromeLinux&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.trax.testCases.TC_createPurchaseOrderTest&quot;/&gt;
+      &lt;class name=&quot;com.trax.testCases.TC_salesQuoteByPartsIDTest&quot;/&gt;
+      &lt;class name=&quot;com.trax.testCases.TC_salesQuoteBySearchTagsTest&quot;/&gt;
+      &lt;class name=&quot;com.trax.testCases.TC_createSalesOrderwithFullInventory&quot;/&gt;
+      &lt;class name=&quot;com.trax.testCases.TC_createSalesOrderwithPartialInventory&quot;/&gt;
+      &lt;class name=&quot;com.trax.testCases.TC_createSalesOrderwithZeroInventory&quot;/&gt;
+      &lt;class name=&quot;com.trax.testCases.TC_addSupplierTest&quot;/&gt;
+      &lt;class name=&quot;com.trax.testCases.TC_addProdToMfrTest&quot;/&gt;
+      &lt;class name=&quot;com.trax.testCases.TC_convertJobAndPurchaseOrdersTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- trax Test --&gt;
+&lt;/suite&gt; &lt;!-- TraxV1 --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-TraxV1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for TraxV1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">trax Test (9 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-TraxV1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for TraxV1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-TraxV1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for TraxV1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_TraxV1');
+function tableData_TraxV1() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(14);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'salesQuoteByPartsIDTest')
+data.setCell(0, 2, 'com.trax.testCases.TC_salesQuoteByPartsIDTest')
+data.setCell(0, 3, 0);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'salesQuoteBySearchTagsTest')
+data.setCell(1, 2, 'com.trax.testCases.TC_salesQuoteBySearchTagsTest')
+data.setCell(1, 3, 0);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'convertJobAndPurchaseOrdersTest')
+data.setCell(2, 2, 'com.trax.testCases.TC_convertJobAndPurchaseOrdersTest')
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'addMfrTest')
+data.setCell(3, 2, 'com.trax.testCases.TC_addProdToMfrTest')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'createSalesOrderwithFullInventory')
+data.setCell(4, 2, 'com.trax.testCases.TC_createSalesOrderwithFullInventory')
+data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'addSupplierTest')
+data.setCell(5, 2, 'com.trax.testCases.TC_addSupplierTest')
+data.setCell(5, 3, 0);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'addProdToMfrTest')
+data.setCell(6, 2, 'com.trax.testCases.TC_addProdToMfrTest')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'createSalesOrderwithPartialInventory')
+data.setCell(7, 2, 'com.trax.testCases.TC_createSalesOrderwithPartialInventory')
+data.setCell(7, 3, 0);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'createSalesOrderwithZeroInventory')
+data.setCell(8, 2, 'com.trax.testCases.TC_createSalesOrderwithZeroInventory')
+data.setCell(8, 3, 0);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'convertJobAndSubmittalTest')
+data.setCell(9, 2, 'com.trax.testCases.TC_convertJobAndPurchaseOrdersTest')
+data.setCell(9, 3, 0);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'convertJobTest')
+data.setCell(10, 2, 'com.trax.testCases.TC_convertJobAndPurchaseOrdersTest')
+data.setCell(10, 3, 0);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'addAndPopulateJobTest')
+data.setCell(11, 2, 'com.trax.testCases.TC_convertJobAndPurchaseOrdersTest')
+data.setCell(11, 3, 0);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'createPurchaseOrderTest')
+data.setCell(12, 2, 'com.trax.testCases.TC_createPurchaseOrderTest')
+data.setCell(12, 3, 0);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'addJobTest')
+data.setCell(13, 2, 'com.trax.testCases.TC_convertJobAndPurchaseOrdersTest')
+data.setCell(13, 3, 0);
+window.suiteTableData['TraxV1']= { tableData: data, tableDiv: 'times-div-TraxV1'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 0 ms</span>
+              <div id="times-div-TraxV1">
+              </div> <!-- times-div-TraxV1 -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-TraxV1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for TraxV1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-TraxV1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-TraxV1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.trax.testCases.TC_createPurchaseOrderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(chromeLinux)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">createPurchaseOrderTest</span>
+                <span class="method-start">211 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">230 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.trax.testCases.TC_salesQuoteByPartsIDTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(chromeLinux)</span>
+                <span class="method-start">232 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">salesQuoteByPartsIDTest</span>
+                <span class="method-start">238 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">241 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.trax.testCases.TC_salesQuoteBySearchTagsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(chromeLinux)</span>
+                <span class="method-start">241 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">salesQuoteBySearchTagsTest</span>
+                <span class="method-start">246 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">248 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.trax.testCases.TC_createSalesOrderwithFullInventory</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(chromeLinux)</span>
+                <span class="method-start">249 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">createSalesOrderwithFullInventory</span>
+                <span class="method-start">252 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">255 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.trax.testCases.TC_createSalesOrderwithPartialInventory</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(chromeLinux)</span>
+                <span class="method-start">256 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">createSalesOrderwithPartialInventory</span>
+                <span class="method-start">260 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">262 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.trax.testCases.TC_createSalesOrderwithZeroInventory</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(chromeLinux)</span>
+                <span class="method-start">263 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">createSalesOrderwithZeroInventory</span>
+                <span class="method-start">267 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">269 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.trax.testCases.TC_addSupplierTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(chromeLinux)</span>
+                <span class="method-start">270 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">addSupplierTest</span>
+                <span class="method-start">283 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">286 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.trax.testCases.TC_addProdToMfrTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(chromeLinux)</span>
+                <span class="method-start">286 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">addMfrTest</span>
+                <span class="method-start">293 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addProdToMfrTest</span>
+                <span class="method-start">296 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">299 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.trax.testCases.TC_convertJobAndPurchaseOrdersTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(chromeLinux)</span>
+                <span class="method-start">300 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">addJobTest</span>
+                <span class="method-start">304 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addAndPopulateJobTest</span>
+                <span class="method-start">307 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">convertJobTest</span>
+                <span class="method-start">311 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">convertJobAndSubmittalTest</span>
+                <span class="method-start">314 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">convertJobAndPurchaseOrdersTest</span>
+                <span class="method-start">316 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">318 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

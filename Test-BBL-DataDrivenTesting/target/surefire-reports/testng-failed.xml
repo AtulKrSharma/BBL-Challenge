@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TraxV1]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.trax.utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="trax Test(failed)" verbose="0">
+    <parameter name="browser" value="chromeLinux"/>
+    <classes>
+      <class name="com.trax.testCases.TC_salesQuoteByPartsIDTest">
+        <methods>
+          <include name="setup"/>
+          <include name="salesQuoteByPartsIDTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.trax.testCases.TC_salesQuoteByPartsIDTest -->
+      <class name="com.trax.testCases.TC_createSalesOrderwithPartialInventory">
+        <methods>
+          <include name="setup"/>
+          <include name="createSalesOrderwithPartialInventory"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.trax.testCases.TC_createSalesOrderwithPartialInventory -->
+      <class name="com.trax.testCases.TC_createSalesOrderwithZeroInventory">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="createSalesOrderwithZeroInventory"/>
+        </methods>
+      </class> <!-- com.trax.testCases.TC_createSalesOrderwithZeroInventory -->
+      <class name="com.trax.testCases.TC_addSupplierTest">
+        <methods>
+          <include name="setup"/>
+          <include name="addSupplierTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.trax.testCases.TC_addSupplierTest -->
+      <class name="com.trax.testCases.TC_addProdToMfrTest">
+        <methods>
+          <include name="addProdToMfrTest"/>
+          <include name="setup"/>
+          <include name="addMfrTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.trax.testCases.TC_addProdToMfrTest -->
+      <class name="com.trax.testCases.TC_salesQuoteBySearchTagsTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="salesQuoteBySearchTagsTest"/>
+        </methods>
+      </class> <!-- com.trax.testCases.TC_salesQuoteBySearchTagsTest -->
+      <class name="com.trax.testCases.TC_convertJobAndPurchaseOrdersTest">
+        <methods>
+          <include name="addAndPopulateJobTest"/>
+          <include name="convertJobAndSubmittalTest"/>
+          <include name="setup"/>
+          <include name="convertJobAndPurchaseOrdersTest"/>
+          <include name="tearDown"/>
+          <include name="convertJobTest"/>
+          <include name="addJobTest"/>
+        </methods>
+      </class> <!-- com.trax.testCases.TC_convertJobAndPurchaseOrdersTest -->
+      <class name="com.trax.testCases.TC_createSalesOrderwithFullInventory">
+        <methods>
+          <include name="setup"/>
+          <include name="createSalesOrderwithFullInventory"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.trax.testCases.TC_createSalesOrderwithFullInventory -->
+      <class name="com.trax.testCases.TC_createPurchaseOrderTest">
+        <methods>
+          <include name="setup"/>
+          <include name="createPurchaseOrderTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.trax.testCases.TC_createPurchaseOrderTest -->
+    </classes>
+  </test> <!-- trax Test(failed) -->
+</suite> <!-- Failed suite [TraxV1] -->

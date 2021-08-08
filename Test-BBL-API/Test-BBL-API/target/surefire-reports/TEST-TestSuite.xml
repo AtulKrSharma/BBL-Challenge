@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="1.94" tests="32" errors="0" skipped="23" failures="9">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/var/lib/jenkins/workspace/Trax_Automation-Test/target/test-classes:/var/lib/jenkins/workspace/Trax_Automation-Test/target/classes:/var/lib/jenkins/.m2/repository/com/google/apis/google-api-services-gmail/v1-rev105-1.25.0/google-api-services-gmail-v1-rev105-1.25.0.jar:/var/lib/jenkins/.m2/repository/com/google/api-client/google-api-client/1.25.0/google-api-client-1.25.0.jar:/var/lib/jenkins/.m2/repository/com/google/oauth-client/google-oauth-client/1.25.0/google-oauth-client-1.25.0.jar:/var/lib/jenkins/.m2/repository/com/google/http-client/google-http-client/1.25.0/google-http-client-1.25.0.jar:/var/lib/jenkins/.m2/repository/com/google/http-client/google-http-client-jackson2/1.25.0/google-http-client-jackson2-1.25.0.jar:/var/lib/jenkins/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.6/jackson-core-2.9.6.jar:/var/lib/jenkins/.m2/repository/com/testautomationguru/pdfutil/pdf-util/0.0.3/pdf-util-0.0.3.jar:/var/lib/jenkins/.m2/repository/org/apache/pdfbox/pdfbox-tools/2.0.8/pdfbox-tools-2.0.8.jar:/var/lib/jenkins/.m2/repository/org/apache/pdfbox/pdfbox-debugger/2.0.8/pdfbox-debugger-2.0.8.jar:/var/lib/jenkins/.m2/repository/com/j256/simplemagic/simplemagic/1.8/simplemagic-1.8.jar:/var/lib/jenkins/.m2/repository/com/sun/mail/smtp/1.6.0/smtp-1.6.0.jar:/var/lib/jenkins/.m2/repository/com/sun/mail/javax.mail/1.6.0/javax.mail-1.6.0.jar:/var/lib/jenkins/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/var/lib/jenkins/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-java/3.14.0/selenium-java-3.14.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.14.0/selenium-chrome-driver-3.14.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.14.0/selenium-edge-driver-3.14.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.14.0/selenium-firefox-driver-3.14.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.14.0/selenium-ie-driver-3.14.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.14.0/selenium-opera-driver-3.14.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.14.0/selenium-safari-driver-3.14.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar:/var/lib/jenkins/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/var/lib/jenkins/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/var/lib/jenkins/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/var/lib/jenkins/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/var/lib/jenkins/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/var/lib/jenkins/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/var/lib/jenkins/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/var/lib/jenkins/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/var/lib/jenkins/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/var/lib/jenkins/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/var/lib/jenkins/.m2/repository/org/apache/httpcomponents/httpclient/4.5.5/httpclient-4.5.5.jar:/var/lib/jenkins/.m2/repository/org/apache/httpcomponents/httpcore/4.4.9/httpcore-4.4.9.jar:/var/lib/jenkins/.m2/repository/com/squareup/okhttp3/okhttp/3.10.0/okhttp-3.10.0.jar:/var/lib/jenkins/.m2/repository/com/squareup/okio/okio/1.14.1/okio-1.14.1.jar:/var/lib/jenkins/.m2/repository/javax/mail/javax.mail-api/1.6.2/javax.mail-api-1.6.2.jar:/var/lib/jenkins/.m2/repository/org/testng/testng/7.1.0/testng-7.1.0.jar:/var/lib/jenkins/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/var/lib/jenkins/.m2/repository/com/google/inject/guice/4.1.0/guice-4.1.0-no_aop.jar:/var/lib/jenkins/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/var/lib/jenkins/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/var/lib/jenkins/.m2/repository/org/yaml/snakeyaml/1.21/snakeyaml-1.21.jar:/var/lib/jenkins/.m2/repository/org/apache/poi/poi/3.17/poi-3.17.jar:/var/lib/jenkins/.m2/repository/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.jar:/var/lib/jenkins/.m2/repository/org/apache/pdfbox/pdfbox/2.0.16/pdfbox-2.0.16.jar:/var/lib/jenkins/.m2/repository/org/apache/pdfbox/fontbox/2.0.16/fontbox-2.0.16.jar:/var/lib/jenkins/.m2/repository/org/apache/poi/poi-ooxml/3.17/poi-ooxml-3.17.jar:/var/lib/jenkins/.m2/repository/org/apache/poi/poi-ooxml-schemas/3.17/poi-ooxml-schemas-3.17.jar:/var/lib/jenkins/.m2/repository/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar:/var/lib/jenkins/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/var/lib/jenkins/.m2/repository/com/github/virtuald/curvesapi/1.04/curvesapi-1.04.jar:/var/lib/jenkins/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar:/var/lib/jenkins/.m2/repository/org/freemarker/freemarker/2.3.23/freemarker-2.3.23.jar:/var/lib/jenkins/.m2/repository/org/mongodb/mongodb-driver/3.3.0/mongodb-driver-3.3.0.jar:/var/lib/jenkins/.m2/repository/org/mongodb/bson/3.3.0/bson-3.3.0.jar:/var/lib/jenkins/.m2/repository/org/mongodb/mongodb-driver-core/3.3.0/mongodb-driver-core-3.3.0.jar:/var/lib/jenkins/.m2/repository/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar:/var/lib/jenkins/.m2/repository/org/jsoup/jsoup/1.9.2/jsoup-1.9.2.jar:/var/lib/jenkins/.m2/repository/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar:/var/lib/jenkins/.m2/repository/org/apache/commons/commons-lang3/3.0/commons-lang3-3.0.jar:/var/lib/jenkins/.m2/repository/commons-io/commons-io/1.3.2/commons-io-1.3.2.jar:/var/lib/jenkins/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:"/>
+    <property name="java.vm.vendor" value="Red Hat, Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://www.redhat.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-11.0.12.0.7-0.el7_9.x86_64/lib"/>
+    <property name="sun.java.command" value="/var/lib/jenkins/workspace/Trax_Automation-Test/target/surefire/surefirebooter18375319170308929804.jar /var/lib/jenkins/workspace/Trax_Automation-Test/target/surefire 2021-08-06T11-10-20_970-jvmRun1 surefire10345598210118243732tmp surefire_05162879914204710458tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/var/lib/jenkins/workspace/Trax_Automation-Test/target/test-classes:/var/lib/jenkins/workspace/Trax_Automation-Test/target/classes:/var/lib/jenkins/.m2/repository/com/google/apis/google-api-services-gmail/v1-rev105-1.25.0/google-api-services-gmail-v1-rev105-1.25.0.jar:/var/lib/jenkins/.m2/repository/com/google/api-client/google-api-client/1.25.0/google-api-client-1.25.0.jar:/var/lib/jenkins/.m2/repository/com/google/oauth-client/google-oauth-client/1.25.0/google-oauth-client-1.25.0.jar:/var/lib/jenkins/.m2/repository/com/google/http-client/google-http-client/1.25.0/google-http-client-1.25.0.jar:/var/lib/jenkins/.m2/repository/com/google/http-client/google-http-client-jackson2/1.25.0/google-http-client-jackson2-1.25.0.jar:/var/lib/jenkins/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.6/jackson-core-2.9.6.jar:/var/lib/jenkins/.m2/repository/com/testautomationguru/pdfutil/pdf-util/0.0.3/pdf-util-0.0.3.jar:/var/lib/jenkins/.m2/repository/org/apache/pdfbox/pdfbox-tools/2.0.8/pdfbox-tools-2.0.8.jar:/var/lib/jenkins/.m2/repository/org/apache/pdfbox/pdfbox-debugger/2.0.8/pdfbox-debugger-2.0.8.jar:/var/lib/jenkins/.m2/repository/com/j256/simplemagic/simplemagic/1.8/simplemagic-1.8.jar:/var/lib/jenkins/.m2/repository/com/sun/mail/smtp/1.6.0/smtp-1.6.0.jar:/var/lib/jenkins/.m2/repository/com/sun/mail/javax.mail/1.6.0/javax.mail-1.6.0.jar:/var/lib/jenkins/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/var/lib/jenkins/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-java/3.14.0/selenium-java-3.14.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.14.0/selenium-chrome-driver-3.14.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.14.0/selenium-edge-driver-3.14.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.14.0/selenium-firefox-driver-3.14.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.14.0/selenium-ie-driver-3.14.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.14.0/selenium-opera-driver-3.14.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.14.0/selenium-safari-driver-3.14.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar:/var/lib/jenkins/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/var/lib/jenkins/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/var/lib/jenkins/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/var/lib/jenkins/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/var/lib/jenkins/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/var/lib/jenkins/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/var/lib/jenkins/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/var/lib/jenkins/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/var/lib/jenkins/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/var/lib/jenkins/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/var/lib/jenkins/.m2/repository/org/apache/httpcomponents/httpclient/4.5.5/httpclient-4.5.5.jar:/var/lib/jenkins/.m2/repository/org/apache/httpcomponents/httpcore/4.4.9/httpcore-4.4.9.jar:/var/lib/jenkins/.m2/repository/com/squareup/okhttp3/okhttp/3.10.0/okhttp-3.10.0.jar:/var/lib/jenkins/.m2/repository/com/squareup/okio/okio/1.14.1/okio-1.14.1.jar:/var/lib/jenkins/.m2/repository/javax/mail/javax.mail-api/1.6.2/javax.mail-api-1.6.2.jar:/var/lib/jenkins/.m2/repository/org/testng/testng/7.1.0/testng-7.1.0.jar:/var/lib/jenkins/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/var/lib/jenkins/.m2/repository/com/google/inject/guice/4.1.0/guice-4.1.0-no_aop.jar:/var/lib/jenkins/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/var/lib/jenkins/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/var/lib/jenkins/.m2/repository/org/yaml/snakeyaml/1.21/snakeyaml-1.21.jar:/var/lib/jenkins/.m2/repository/org/apache/poi/poi/3.17/poi-3.17.jar:/var/lib/jenkins/.m2/repository/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.jar:/var/lib/jenkins/.m2/repository/org/apache/pdfbox/pdfbox/2.0.16/pdfbox-2.0.16.jar:/var/lib/jenkins/.m2/repository/org/apache/pdfbox/fontbox/2.0.16/fontbox-2.0.16.jar:/var/lib/jenkins/.m2/repository/org/apache/poi/poi-ooxml/3.17/poi-ooxml-3.17.jar:/var/lib/jenkins/.m2/repository/org/apache/poi/poi-ooxml-schemas/3.17/poi-ooxml-schemas-3.17.jar:/var/lib/jenkins/.m2/repository/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar:/var/lib/jenkins/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/var/lib/jenkins/.m2/repository/com/github/virtuald/curvesapi/1.04/curvesapi-1.04.jar:/var/lib/jenkins/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar:/var/lib/jenkins/.m2/repository/org/freemarker/freemarker/2.3.23/freemarker-2.3.23.jar:/var/lib/jenkins/.m2/repository/org/mongodb/mongodb-driver/3.3.0/mongodb-driver-3.3.0.jar:/var/lib/jenkins/.m2/repository/org/mongodb/bson/3.3.0/bson-3.3.0.jar:/var/lib/jenkins/.m2/repository/org/mongodb/mongodb-driver-core/3.3.0/mongodb-driver-core-3.3.0.jar:/var/lib/jenkins/.m2/repository/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar:/var/lib/jenkins/.m2/repository/org/jsoup/jsoup/1.9.2/jsoup-1.9.2.jar:/var/lib/jenkins/.m2/repository/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar:/var/lib/jenkins/.m2/repository/org/apache/commons/commons-lang3/3.0/commons-lang3-3.0.jar:/var/lib/jenkins/.m2/repository/commons-io/commons-io/1.3.2/commons-io-1.3.2.jar:/var/lib/jenkins/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/var/lib/jenkins"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-07-20"/>
+    <property name="java.home" value="/usr/lib/jvm/java-11-openjdk-11.0.12.0.7-0.el7_9.x86_64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/var/lib/jenkins/workspace/Trax_Automation-Test"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/var/lib/jenkins/workspace/Trax_Automation-Test/target/surefire/surefirebooter18375319170308929804.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.12+7-LTS"/>
+    <property name="user.name" value="jenkins"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="3.10.0-1160.36.2.el7.x86_64"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="/var/lib/jenkins/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugzilla.redhat.com/enter_bug.cgi?product=Red%20Hat%20Enterprise%20Linux%207&amp;component=java-11-openjdk"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="11.0.12"/>
+    <property name="user.dir" value="/var/lib/jenkins/workspace/Trax_Automation-Test"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Red Hat, Inc."/>
+    <property name="java.vm.version" value="11.0.12+7-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="setup" classname="com.trax.testCases.TC_createPurchaseOrderTest" time="1.117">
+    <failure message="Unable to find a free port" type="java.lang.RuntimeException">java.lang.RuntimeException: Unable to find a free port
+</failure>
+    <system-out><![CDATA[/var/lib/jenkins/workspace/Trax_Automation-Test/Resources/koretrax.svg
+/var/lib/jenkins/workspace/Trax_Automation-Test/Reports
+TRAX logo file placed
+]]></system-out>
+  </testcase>
+  <testcase name="createPurchaseOrderTest" classname="com.trax.testCases.TC_createPurchaseOrderTest" time="0">
+    <skipped message="Unable to find a free port"/>
+    <system-out><![CDATA[instance-->com.trax.testCases.TC_createPurchaseOrderTest
+methodname-->TC_createPurchaseOrderTest.createPurchaseOrderTest()[pri:0, instance:com.trax.testCases.TC_createPurchaseOrderTest@5ef60048]
+finalInstance-->createPurchaseOrderTest
+finalmethodname-->createPurchaseOrderTest
+createPurchaseOrderTestValue is not present, so added
+]]></system-out>
+  </testcase>
+  <testcase name="tearDown" classname="com.trax.testCases.TC_createPurchaseOrderTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[onTestSkipped
+]]></system-out>
+  </testcase>
+  <testcase name="setup" classname="com.trax.testCases.TC_salesQuoteByPartsIDTest" time="0.026">
+    <failure message="Unable to find a free port" type="java.lang.RuntimeException">java.lang.RuntimeException: Unable to find a free port
+</failure>
+  </testcase>
+  <testcase name="salesQuoteByPartsIDTest" classname="com.trax.testCases.TC_salesQuoteByPartsIDTest" time="0">
+    <skipped message="Unable to find a free port"/>
+    <system-out><![CDATA[instance-->com.trax.testCases.TC_salesQuoteByPartsIDTest
+methodname-->TC_salesQuoteByPartsIDTest.salesQuoteByPartsIDTest()[pri:0, instance:com.trax.testCases.TC_salesQuoteByPartsIDTest@1d548a08]
+finalInstance-->salesQuoteByPartsIDTest
+finalmethodname-->salesQuoteByPartsIDTest
+salesQuoteByPartsIDTestValue is not present, so added
+]]></system-out>
+  </testcase>
+  <testcase name="tearDown" classname="com.trax.testCases.TC_salesQuoteByPartsIDTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[onTestSkipped
+]]></system-out>
+  </testcase>
+  <testcase name="setup" classname="com.trax.testCases.TC_salesQuoteBySearchTagsTest" time="0.007">
+    <failure message="Unable to find a free port" type="java.lang.RuntimeException">java.lang.RuntimeException: Unable to find a free port
+</failure>
+  </testcase>
+  <testcase name="salesQuoteBySearchTagsTest" classname="com.trax.testCases.TC_salesQuoteBySearchTagsTest" time="0">
+    <skipped message="Unable to find a free port"/>
+    <system-out><![CDATA[instance-->com.trax.testCases.TC_salesQuoteBySearchTagsTest
+methodname-->TC_salesQuoteBySearchTagsTest.salesQuoteBySearchTagsTest()[pri:0, instance:com.trax.testCases.TC_salesQuoteBySearchTagsTest@16aa0a0a]
+finalInstance-->salesQuoteBySearchTagsTest
+finalmethodname-->salesQuoteBySearchTagsTest
+salesQuoteBySearchTagsTestValue is not present, so added
+]]></system-out>
+  </testcase>
+  <testcase name="tearDown" classname="com.trax.testCases.TC_salesQuoteBySearchTagsTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[onTestSkipped
+]]></system-out>
+  </testcase>
+  <testcase name="setup" classname="com.trax.testCases.TC_createSalesOrderwithFullInventory" time="0.006">
+    <failure message="Unable to find a free port" type="java.lang.RuntimeException">java.lang.RuntimeException: Unable to find a free port
+</failure>
+  </testcase>
+  <testcase name="createSalesOrderwithFullInventory" classname="com.trax.testCases.TC_createSalesOrderwithFullInventory" time="0">
+    <skipped message="Unable to find a free port"/>
+    <system-out><![CDATA[instance-->com.trax.testCases.TC_createSalesOrderwithFullInventory
+methodname-->TC_createSalesOrderwithFullInventory.createSalesOrderwithFullInventory()[pri:0, instance:com.trax.testCases.TC_createSalesOrderwithFullInventory@780cb77]
+finalInstance-->createSalesOrderwithFullInventory
+finalmethodname-->createSalesOrderwithFullInventory
+createSalesOrderwithFullInventoryValue is not present, so added
+]]></system-out>
+  </testcase>
+  <testcase name="tearDown" classname="com.trax.testCases.TC_createSalesOrderwithFullInventory" time="0">
+    <skipped/>
+    <system-out><![CDATA[onTestSkipped
+]]></system-out>
+  </testcase>
+  <testcase name="setup" classname="com.trax.testCases.TC_createSalesOrderwithPartialInventory" time="0.007">
+    <failure message="Unable to find a free port" type="java.lang.RuntimeException">java.lang.RuntimeException: Unable to find a free port
+</failure>
+  </testcase>
+  <testcase name="createSalesOrderwithPartialInventory" classname="com.trax.testCases.TC_createSalesOrderwithPartialInventory" time="0">
+    <skipped message="Unable to find a free port"/>
+    <system-out><![CDATA[instance-->com.trax.testCases.TC_createSalesOrderwithPartialInventory
+methodname-->TC_createSalesOrderwithPartialInventory.createSalesOrderwithPartialInventory()[pri:0, instance:com.trax.testCases.TC_createSalesOrderwithPartialInventory@691a7f8f]
+finalInstance-->createSalesOrderwithPartialInventory
+finalmethodname-->createSalesOrderwithPartialInventory
+createSalesOrderwithPartialInventoryValue is not present, so added
+]]></system-out>
+  </testcase>
+  <testcase name="tearDown" classname="com.trax.testCases.TC_createSalesOrderwithPartialInventory" time="0">
+    <skipped/>
+    <system-out><![CDATA[onTestSkipped
+]]></system-out>
+  </testcase>
+  <testcase name="setup" classname="com.trax.testCases.TC_createSalesOrderwithZeroInventory" time="0.007">
+    <failure message="Unable to find a free port" type="java.lang.RuntimeException">java.lang.RuntimeException: Unable to find a free port
+</failure>
+  </testcase>
+  <testcase name="createSalesOrderwithZeroInventory" classname="com.trax.testCases.TC_createSalesOrderwithZeroInventory" time="0">
+    <skipped message="Unable to find a free port"/>
+    <system-out><![CDATA[instance-->com.trax.testCases.TC_createSalesOrderwithZeroInventory
+methodname-->TC_createSalesOrderwithZeroInventory.createSalesOrderwithZeroInventory()[pri:0, instance:com.trax.testCases.TC_createSalesOrderwithZeroInventory@50a7bc6e]
+finalInstance-->createSalesOrderwithZeroInventory
+finalmethodname-->createSalesOrderwithZeroInventory
+createSalesOrderwithZeroInventoryValue is not present, so added
+]]></system-out>
+  </testcase>
+  <testcase name="tearDown" classname="com.trax.testCases.TC_createSalesOrderwithZeroInventory" time="0">
+    <skipped/>
+    <system-out><![CDATA[onTestSkipped
+]]></system-out>
+  </testcase>
+  <testcase name="setup" classname="com.trax.testCases.TC_addSupplierTest" time="0.016">
+    <failure message="Unable to find a free port" type="java.lang.RuntimeException">java.lang.RuntimeException: Unable to find a free port
+</failure>
+  </testcase>
+  <testcase name="addSupplierTest" classname="com.trax.testCases.TC_addSupplierTest" time="0">
+    <skipped message="Unable to find a free port"/>
+    <system-out><![CDATA[instance-->com.trax.testCases.TC_addSupplierTest
+methodname-->TC_addSupplierTest.addSupplierTest()[pri:0, instance:com.trax.testCases.TC_addSupplierTest@161b062a]
+finalInstance-->addSupplierTest
+finalmethodname-->addSupplierTest
+addSupplierTestValue is not present, so added
+]]></system-out>
+  </testcase>
+  <testcase name="tearDown" classname="com.trax.testCases.TC_addSupplierTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[onTestSkipped
+]]></system-out>
+  </testcase>
+  <testcase name="setup" classname="com.trax.testCases.TC_addProdToMfrTest" time="0.008">
+    <failure message="Unable to find a free port" type="java.lang.RuntimeException">java.lang.RuntimeException: Unable to find a free port
+</failure>
+  </testcase>
+  <testcase name="addMfrTest" classname="com.trax.testCases.TC_addProdToMfrTest" time="0">
+    <skipped message="Unable to find a free port"/>
+    <system-out><![CDATA[instance-->com.trax.testCases.TC_addProdToMfrTest
+methodname-->TC_addMfrTest.addMfrTest()[pri:0, instance:com.trax.testCases.TC_addProdToMfrTest@17c1bced]
+finalInstance-->addProdToMfrTest
+finalmethodname-->addMfrTest
+addProdToMfrTestValue is not present, so added
+]]></system-out>
+  </testcase>
+  <testcase name="addProdToMfrTest" classname="com.trax.testCases.TC_addProdToMfrTest" time="0">
+    <skipped message="Unable to find a free port"/>
+    <system-out><![CDATA[onTestSkipped
+instance-->com.trax.testCases.TC_addProdToMfrTest
+methodname-->TC_addProdToMfrTest.addProdToMfrTest()[pri:0, instance:com.trax.testCases.TC_addProdToMfrTest@17c1bced]
+finalInstance-->addProdToMfrTest
+finalmethodname-->addProdToMfrTest
+addProdToMfrTest Value is already present
+]]></system-out>
+  </testcase>
+  <testcase name="tearDown" classname="com.trax.testCases.TC_addProdToMfrTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[onTestSkipped
+]]></system-out>
+  </testcase>
+  <testcase name="setup" classname="com.trax.testCases.TC_convertJobAndPurchaseOrdersTest" time="0.008">
+    <failure message="Unable to find a free port" type="java.lang.RuntimeException">java.lang.RuntimeException: Unable to find a free port
+</failure>
+  </testcase>
+  <testcase name="addJobTest" classname="com.trax.testCases.TC_convertJobAndPurchaseOrdersTest" time="0">
+    <skipped message="Unable to find a free port"/>
+    <system-out><![CDATA[instance-->com.trax.testCases.TC_convertJobAndPurchaseOrdersTest
+methodname-->TC_addJobTest.addJobTest()[pri:0, instance:com.trax.testCases.TC_convertJobAndPurchaseOrdersTest@2d9d4f9d]
+finalInstance-->convertJobAndPurchaseOrdersTest
+finalmethodname-->addJobTest
+convertJobAndPurchaseOrdersTestValue is not present, so added
+]]></system-out>
+  </testcase>
+  <testcase name="addAndPopulateJobTest" classname="com.trax.testCases.TC_convertJobAndPurchaseOrdersTest" time="0">
+    <skipped message="Unable to find a free port"/>
+    <system-out><![CDATA[onTestSkipped
+instance-->com.trax.testCases.TC_convertJobAndPurchaseOrdersTest
+methodname-->TC_addAndPopulateJobTest.addAndPopulateJobTest()[pri:0, instance:com.trax.testCases.TC_convertJobAndPurchaseOrdersTest@2d9d4f9d]
+finalInstance-->convertJobAndPurchaseOrdersTest
+finalmethodname-->addAndPopulateJobTest
+convertJobAndPurchaseOrdersTest Value is already present
+]]></system-out>
+  </testcase>
+  <testcase name="convertJobTest" classname="com.trax.testCases.TC_convertJobAndPurchaseOrdersTest" time="0">
+    <skipped message="Unable to find a free port"/>
+    <system-out><![CDATA[onTestSkipped
+instance-->com.trax.testCases.TC_convertJobAndPurchaseOrdersTest
+methodname-->TC_convertJobTest.convertJobTest()[pri:0, instance:com.trax.testCases.TC_convertJobAndPurchaseOrdersTest@2d9d4f9d]
+finalInstance-->convertJobAndPurchaseOrdersTest
+finalmethodname-->convertJobTest
+convertJobAndPurchaseOrdersTest Value is already present
+]]></system-out>
+  </testcase>
+  <testcase name="convertJobAndSubmittalTest" classname="com.trax.testCases.TC_convertJobAndPurchaseOrdersTest" time="0">
+    <skipped message="Unable to find a free port"/>
+    <system-out><![CDATA[onTestSkipped
+instance-->com.trax.testCases.TC_convertJobAndPurchaseOrdersTest
+methodname-->TC_convertJobAndSubmittalTest.convertJobAndSubmittalTest()[pri:0, instance:com.trax.testCases.TC_convertJobAndPurchaseOrdersTest@2d9d4f9d]
+finalInstance-->convertJobAndPurchaseOrdersTest
+finalmethodname-->convertJobAndSubmittalTest
+convertJobAndPurchaseOrdersTest Value is already present
+]]></system-out>
+  </testcase>
+  <testcase name="convertJobAndPurchaseOrdersTest" classname="com.trax.testCases.TC_convertJobAndPurchaseOrdersTest" time="0">
+    <skipped message="Unable to find a free port"/>
+    <system-out><![CDATA[onTestSkipped
+instance-->com.trax.testCases.TC_convertJobAndPurchaseOrdersTest
+methodname-->TC_convertJobAndPurchaseOrdersTest.convertJobAndPurchaseOrdersTest()[pri:0, instance:com.trax.testCases.TC_convertJobAndPurchaseOrdersTest@2d9d4f9d]
+finalInstance-->convertJobAndPurchaseOrdersTest
+finalmethodname-->convertJobAndPurchaseOrdersTest
+convertJobAndPurchaseOrdersTest Value is already present
+]]></system-out>
+  </testcase>
+  <testcase name="tearDown" classname="com.trax.testCases.TC_convertJobAndPurchaseOrdersTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[onTestSkipped
+]]></system-out>
+  </testcase>
+</testsuite>
